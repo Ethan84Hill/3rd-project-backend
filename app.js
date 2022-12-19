@@ -5,7 +5,7 @@ require('dotenv/config')
 
 const authRouter = require('./routes/auth.routes')
 const productRouter = require('./routes/product.routes')
-const cartRouter = require('./routes/cart.routes')
+const addressRouter = require('./routes/address.routes')
 const { isAuthenticated } = require('./middleware/jwt.middleware')
 
 const app = express();
@@ -25,7 +25,7 @@ app.use(express.json())
 
 app.use('/', productRouter)
 
-app.use('/', cartRouter)
+app.use('/', addressRouter)
 
 app.use('/auth', authRouter)
 
