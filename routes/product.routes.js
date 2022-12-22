@@ -12,7 +12,14 @@ router.get('/products', getCreatedProducts)
 
 router.get('/products/:productId', getProductId)
 
+
+
+
 router.put('/products/:productId', putProductId)
+
+
+
+
 
 router.delete('/products/:productId', deleteProduct)
 
